@@ -1,0 +1,8 @@
+{
+  "name": "rfr-components",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular",
+  "id": "9670f3f2"
+}
