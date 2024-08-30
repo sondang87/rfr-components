@@ -39,7 +39,15 @@ const routes: Routes = [
   {
     path: 'icons',
     loadChildren: () => import('./icon/icon.module').then( m => m.IconPageModule)
+  },
+  {
+    path: 'lists',
+    loadChildren: () => import('./list-item/list-item.module').then( m => m.ListItemPageModule)
+  },  {
+    path: 'floating-buttons',
+    loadChildren: () => import('./floating-buttons/floating-buttons.module').then( m => m.FloatingButtonsPageModule)
   }
+
 
 ];
 

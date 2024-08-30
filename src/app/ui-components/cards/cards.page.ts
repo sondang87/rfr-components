@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-cards',
+  selector: 'bytearray-cards',
   templateUrl: './cards.page.html',
   styleUrls: ['./cards.page.scss'],
 })

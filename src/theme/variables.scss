@@ -1016,3 +1016,9 @@
     --ion-color-base: var(--ion-color-button-primary);
     --ion-color-contrast: #ffffff;
   }
+
+  .ion-color-secondary {
+    &:hover {
+        --ion-color-contrast: var(--ion-color-secondary-contrast-rgb) !important;
+    }
+  }

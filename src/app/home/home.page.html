@@ -78,7 +78,24 @@
           </ion-row>
         </ion-col>
       </ion-row>
+
       <ion-row>
+        <ion-col size-lg="12" size="12">
+          <ion-card (click)="navigate('lists')">
+            <ion-card-header style="display: -webkit-box;">
+              <ion-avatar><img src="https://ionicframework.com/docs/icons/component-input-icon.png" /></ion-avatar>
+              <ion-avatar><img src="https://ionicframework.com/docs/icons/component-item-icon.png" /></ion-avatar>
+              <ion-avatar><img src="https://ionicframework.com/docs/icons/component-lists-icon.png" /></ion-avatar>
+            </ion-card-header>
+            <ion-card-content>
+              <h6><b>Input, Items & Lists</b></h6>
+              <span>Inputs provide a way for users to enter data in your app.<br />Items are an all-purpose UI container that can be used as part of a list.<br />Lists can display rows of information, such as a contact list, playlist or menu.</span>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+
+      <!-- <ion-row>
         <ion-col size-lg="4" size="12">
           <ion-card>
             <ion-card-header>
@@ -112,7 +129,7 @@
             </ion-card-content>
           </ion-card>
         </ion-col>
-      </ion-row>
+      </ion-row> -->
 
       <ion-row>
         <ion-col size-lg="8" size="12">
@@ -129,7 +146,7 @@
               </ion-card>
             </ion-col>
             <ion-col size-lg="6" size="12">
-              <ion-card>
+              <ion-card (click)="navigate('floating-buttons')">
                 <ion-card-header>
                   <ion-avatar><ion-icon name="add-circle"></ion-icon></ion-avatar>
                 </ion-card-header>
@@ -169,42 +186,6 @@
             <ion-card-content>
               <h6><b>Icons</b></h6>
               <span>Beaytifully designed icons for use in web, iOS and Android apps.</span>
-            </ion-card-content>
-          </ion-card>
-        </ion-col>
-      </ion-row>
-
-      <ion-row>
-        <ion-col size-lg="4" size="12">
-          <ion-card>
-            <ion-card-header>
-              <ion-avatar><img src="https://ionicframework.com/docs/icons/component-input-icon.png" /></ion-avatar>
-            </ion-card-header>
-            <ion-card-content>
-              <h6><b>Input</b></h6>
-              <span>Inputs provide a way for users to enter data in your app.</span>
-            </ion-card-content>
-          </ion-card>
-        </ion-col>
-        <ion-col size-lg="4" size="12">
-          <ion-card>
-            <ion-card-header>
-              <ion-avatar><img src="https://ionicframework.com/docs/icons/component-item-icon.png" /></ion-avatar>
-            </ion-card-header>
-            <ion-card-content>
-              <h6><b>Item</b></h6>
-              <span>Items are an all-purpose UI container that can be used as part of a list.</span>
-            </ion-card-content>
-          </ion-card>
-        </ion-col>
-        <ion-col size-lg="4" size="12">
-          <ion-card>
-            <ion-card-header>
-              <ion-avatar><img src="https://ionicframework.com/docs/icons/component-lists-icon.png" /></ion-avatar>
-            </ion-card-header>
-            <ion-card-content>
-              <h6><b>List</b></h6>
-              <span>Lists can display rows of information, such as a contact list, playlist or menu.</span>
             </ion-card-content>
           </ion-card>
         </ion-col>

@@ -1,0 +1,126 @@
+<ion-header [translucent]="true">
+  <ion-row>
+    <ion-col>
+      <ion-item lines="none">
+        <img slot="start" src="assets/logos/rfr-200.png" width="100">
+        <ion-segment value="components">
+          <ion-segment-button  value="components"><ion-label>UI Components</ion-label></ion-segment-button>
+        </ion-segment>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button mode="md" defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Floating Buttons</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-row class="ion-justify-content-center">
+    <ion-col size="12" size-lg="8">
+      <p class="ion-padding">
+        Fabs are container elements that contain one or more fab buttons. They should be placed in a fixed position that does not scroll with the content. Fabs should have one main fab button. Fabs can also contain one or more fab lists which contain related buttons that show when the main fab button is clicked.
+      </p>
+      <ion-list-header>
+        Positioning
+      </ion-list-header>
+      <p class="ion-padding">
+        In order to place the fab in a fixed position, it should be assigned to the fixed slot of the outer content component. Use the vertical and horizontal props to control the alignment of the fab in the viewport. The edge prop will cause the fab button to overlap with the app's header or footer.
+      </p>
+      <ion-list-header>
+        List Side
+      </ion-list-header>
+      <p class="ion-padding">
+        The side property of the fab list component controls where it appears relative to the main fab button. A single fab can have multiple fab lists as long as they all have different values for side.
+      </p>
+      <ion-card style="min-height: 300px; height: auto; display: flex; align-items: center; justify-content: center;">
+        <ion-card-content>
+          <ion-fab slot="fixed" horizontal="center" vertical="center">
+            <ion-fab-button>
+              <ion-icon name="add"></ion-icon>
+            </ion-fab-button>
+            
+            <ion-fab-list side="top">
+              <ion-fab-button>
+                <ion-icon name="chevron-up"></ion-icon>
+              </ion-fab-button>
+            </ion-fab-list>
+            <ion-fab-list side="end">
+              <ion-fab-button>
+                <ion-icon name="chevron-forward"></ion-icon>
+              </ion-fab-button>
+              <ion-fab-button>
+                <ion-icon name="chevron-forward"></ion-icon>
+              </ion-fab-button>
+            </ion-fab-list>
+            <ion-fab-list side="bottom">
+              <ion-fab-button>
+                <ion-icon name="chevron-down"></ion-icon>
+              </ion-fab-button>
+            </ion-fab-list>
+            <ion-fab-list side="start">
+              <ion-fab-button>
+                <ion-icon name="chevron-back"></ion-icon>
+              </ion-fab-button>
+              <ion-fab-button>
+                <ion-icon name="chevron-back"></ion-icon>
+              </ion-fab-button>
+            </ion-fab-list> 
+          </ion-fab>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+  <ion-fab slot="fixed" vertical="bottom" horizontal="start">
+    <ion-fab-button>
+      <ion-icon name="chevron-forward-circle"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="end">
+      <ion-fab-button>
+        <ion-icon name="document"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button>
+        <ion-icon name="color-palette"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button>
+        <ion-icon name="globe"></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+
+  <ion-fab slot="fixed" vertical="top" horizontal="end" [edge]="true">
+    <ion-fab-button>
+      <ion-icon name="chevron-down-circle"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="bottom">
+      <ion-fab-button>
+        <ion-icon name="document"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button>
+        <ion-icon name="color-palette"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button>
+        <ion-icon name="globe"></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+
+  <ion-fab slot="fixed" vertical="bottom" horizontal="end">
+    <ion-fab-button>
+      <ion-icon name="chevron-up-circle"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="top">
+      <ion-fab-button>
+        <ion-icon name="document"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button>
+        <ion-icon name="color-palette"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button>
+        <ion-icon name="globe"></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+</ion-content>
