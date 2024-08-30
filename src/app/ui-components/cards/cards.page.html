@@ -1,0 +1,201 @@
+<ion-header [translucent]="true">
+  <ion-row>
+    <ion-col>
+      <ion-item lines="none">
+        <img slot="start" src="assets/logos/rfr-200.png" width="100">
+        <ion-segment value="components">
+          <ion-segment-button  value="components"><ion-label>UI Components</ion-label></ion-segment-button>
+        </ion-segment>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button mode="md" defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Cards</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-row class="ion-justify-content-center">
+    <ion-col size="12" size-lg="8">
+      <p class="ion-padding">
+        Cards are containers that display content such as text, images, buttons, and lists. A card can be a single component, but is often made up of a header, title, subtitle, and content. Cards are broken up into several components to accommodate this structure: card header, card title, card subtitle, and card content.
+      </p>
+      <ion-row>
+        <ion-col size-lg="6" size="12">
+          <ion-card>
+            <ion-card-header>
+              <ion-card-title>Card Title</ion-card-title>
+              <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+            </ion-card-header>
+          
+            <ion-card-content>
+              Here's a small text description for the card content. Nothing more, nothing less.
+            </ion-card-content>
+          </ion-card>
+          <ion-card>
+            <ion-card-header>
+              <ion-card-title>Card Buttons</ion-card-title>
+              <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+            </ion-card-header>
+          
+            <ion-card-content>
+              Here's a small text description for the card content. Nothing more, nothing less.
+            </ion-card-content>
+          
+            <ion-button fill="clear">Action 1</ion-button>
+            <ion-button fill="clear">Action 2</ion-button>
+          </ion-card>
+        </ion-col>
+        <ion-col size-lg="6" size="12">
+          <ion-card>
+            <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/card-media.png" />
+            <ion-card-header>
+              <ion-card-title>Media Card</ion-card-title>
+              <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+            </ion-card-header>
+          
+            <ion-card-content>
+              Here's a small text description for the card content. Nothing more, nothing less.
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+        <ion-col size-lg="6" size="12">
+          <ion-card>
+            <ion-card-header>
+              <ion-card-title>List Card</ion-card-title>
+              <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+            </ion-card-header>
+            <ion-card-content>
+              <ion-list>
+                <ion-item>
+                  <ion-thumbnail slot="start">
+                    <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/thumbnail.svg" />
+                  </ion-thumbnail>
+                  <ion-label>Item</ion-label>
+                </ion-item>
+          
+                <ion-item>
+                  <ion-thumbnail slot="start">
+                    <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/thumbnail.svg" />
+                  </ion-thumbnail>
+                  <ion-label>Item</ion-label>
+                </ion-item>
+          
+                <ion-item>
+                  <ion-thumbnail slot="start">
+                    <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/thumbnail.svg" />
+                  </ion-thumbnail>
+                  <ion-label>Item</ion-label>
+                </ion-item>
+          
+                <ion-item lines="none">
+                  <ion-thumbnail slot="start">
+                    <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/thumbnail.svg" />
+                  </ion-thumbnail>
+                  <ion-label>Item</ion-label>
+                </ion-item>
+              </ion-list>
+            </ion-card-content>
+          </ion-card>
+
+          <ion-card class="custom">
+            <ion-card-header>
+              <ion-card-title>CSS Custom</ion-card-title>
+              <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+            </ion-card-header>
+          
+            <ion-card-content>
+              Here's a small text description for the card content. Nothing more, nothing less.
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+        <ion-col size-lg="6" size="12">
+          <ion-card color="primary">
+            <ion-card-header>
+              <ion-card-title>Card Title</ion-card-title>
+              <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+            </ion-card-header>
+          
+            <ion-card-content> Card Content </ion-card-content>
+          </ion-card>
+          
+          <ion-card color="secondary">
+            <ion-card-header>
+              <ion-card-title>Card Title</ion-card-title>
+              <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+            </ion-card-header>
+          
+            <ion-card-content> Card Content </ion-card-content>
+          </ion-card>
+          
+          <ion-card color="tertiary">
+            <ion-card-header>
+              <ion-card-title>Card Title</ion-card-title>
+              <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+            </ion-card-header>
+          
+            <ion-card-content> Card Content </ion-card-content>
+          </ion-card>
+          
+          <ion-card color="success">
+            <ion-card-header>
+              <ion-card-title>Card Title</ion-card-title>
+              <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+            </ion-card-header>
+          
+            <ion-card-content> Card Content </ion-card-content>
+          </ion-card>
+          
+          <ion-card color="warning">
+            <ion-card-header>
+              <ion-card-title>Card Title</ion-card-title>
+              <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+            </ion-card-header>
+          
+            <ion-card-content> Card Content </ion-card-content>
+          </ion-card>
+          
+          <ion-card color="danger">
+            <ion-card-header>
+              <ion-card-title>Card Title</ion-card-title>
+              <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+            </ion-card-header>
+          
+            <ion-card-content> Card Content </ion-card-content>
+          </ion-card>
+          
+          <ion-card color="light">
+            <ion-card-header>
+              <ion-card-title>Card Title</ion-card-title>
+              <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+            </ion-card-header>
+          
+            <ion-card-content> Card Content </ion-card-content>
+          </ion-card>
+          
+          <ion-card color="medium">
+            <ion-card-header>
+              <ion-card-title>Card Title</ion-card-title>
+              <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+            </ion-card-header>
+          
+            <ion-card-content> Card Content </ion-card-content>
+          </ion-card>
+          
+          <ion-card color="dark">
+            <ion-card-header>
+              <ion-card-title>Card Title</ion-card-title>
+              <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+            </ion-card-header>
+          
+            <ion-card-content> Card Content </ion-card-content>
+          </ion-card>
+        </ion-col>
+        <ion-col size-lg="6" size="12"></ion-col>
+      </ion-row>
+    </ion-col>
+  </ion-row>
+</ion-content>

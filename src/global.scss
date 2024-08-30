@@ -35,3 +35,99 @@
 /* @import "@ionic/angular/css/palettes/dark.always.css"; */
 /* @import "@ionic/angular/css/palettes/dark.class.css"; */
 @import "@ionic/angular/css/palettes/dark.system.css";
+
+ion-header {
+    box-shadow: none !important;
+
+    img {
+        margin-right: 100px;
+    }
+
+    ion-toolbar {
+        background: transparent;
+        --background: transparent;
+        --border-width: 0px !important;
+
+        ion-buttons {
+            ion-back-button {
+                background-color: var(--ion-color-border);
+                border-radius: 50%;
+            }
+        }
+    }
+}
+
+ion-segment {
+    border: none;
+    background: transparent;
+    width: 100%;
+    border-radius: 0;
+    justify-content: left;
+    border-bottom: 1px solid;
+    border-bottom-color: whitesmoke;
+    word-break: break-all;
+    padding-bottom: -1px;
+
+    ion-segment-button {
+        --indicator-color: none;
+        --indicator-box-shadow: none;
+        --indicator-height: 0;
+        min-width: 200px;
+        max-width: 200px;
+        margin-bottom: 0;
+        margin-top: 0;
+        --border-width: 0px;
+        --border-left: none;
+        --border-right: none;
+        text-align: left;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            height: 2px;
+            transition: all .3s;
+            margin: auto;
+            width: 100%;
+            color: white;
+        }
+
+        ion-label {
+            width: 100%;
+            margin: 0;
+            text-align: left;
+            margin-bottom: 5px;
+            font-weight: 600;
+            color: var(--ion-color-primary);
+            line-height: 35px;
+            text-transform: none;
+        }
+
+        &.segment-button-checked {
+            ion-label {
+                color: var(--ion-color-button-primary) !important;
+                font-weight: bold;
+            }
+
+            border: none;
+            background: none;
+            border-bottom: 2px solid;
+            border-bottom-color: var(--ion-color-button-primary);
+            border-bottom-left-radius: 0px;
+            border-bottom-right-radius: 0px;
+            padding-bottom: 1px;
+        }
+    }
+}
+
+.my-alert-prompt {
+    .alert-wrapper {
+        width: 500px;
+    }
+}

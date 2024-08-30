@@ -1,0 +1,47 @@
+<ion-header [translucent]="true">
+  <ion-row>
+    <ion-col>
+      <ion-item lines="none">
+        <img slot="start" src="assets/logos/rfr-200.png" width="100">
+        <ion-segment value="components">
+          <ion-segment-button  value="components"><ion-label>UI Components</ion-label></ion-segment-button>
+        </ion-segment>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button mode="md" defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Alert</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen class="ion-padding margin-bottom-10">
+  <ion-row class="ion-justify-content-center">
+    <ion-col size="12" size-lg="8">
+      <p class="ion-padding">
+        An Alert is a dialog that presents users with information or collects information from the user using inputs. An alert appears on top of the app's content, and must be manually dismissed by the user before they can resume interaction with the app. It can also optionally have a <code>header</code>, <code>subHeader</code> and <code>message</code>.
+      </p>
+      <div class="ion-padding-start ion-padding-end">
+        <ion-button expand="block" color="medium" (click)="presentAlert()">Alert</ion-button>
+      </div>
+      <div class="ion-padding-start ion-padding-end">
+        <ion-button expand="block" color="medium" (click)="presentAlertMultipleButtons()">Alert Multiple Buttons</ion-button>
+      </div>
+      <div class="ion-padding-start ion-padding-end">
+        <ion-button expand="block" color="medium" (click)="presentAlertConfirm()">Alert Confirm</ion-button>
+      </div>
+      <div class="ion-padding-start ion-padding-end">
+        <ion-button expand="block" color="medium" (click)="presentAlertPrompt()">Alert Prompt</ion-button>
+      </div>
+      <div class="ion-padding-start ion-padding-end">
+        <ion-button expand="block" color="medium" (click)="presentAlertRadio()">Alert Radio</ion-button>
+      </div>
+      <div class="ion-padding-start ion-padding-end">
+        <ion-button expand="block" color="medium"  (click)="presentAlertCheckbox()">Alert Checkbox</ion-button>
+      </div>
+    </ion-col>
+  </ion-row>
+  
+</ion-content>

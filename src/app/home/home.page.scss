@@ -1,0 +1,60 @@
+ion-card.action-sheet {
+    height: 95.6%;
+    ion-card-header {
+        background-image: url(https://ionicframework.com/docs/icons/feature-component-actionsheet-icon.png);
+        background-size: 410px;
+        background-repeat: no-repeat;
+        background-position: top;
+        min-height: 250px;
+    }
+
+    ion-card-content {
+        padding: 20px;
+    }
+}
+
+ion-card.icons {
+    height: 95.6%;
+    ion-card-header {
+        background-image: url(https://ionicframework.com/docs/icons/feature-component-icons-icon.png);
+        background-size: 410px;
+        background-repeat: no-repeat;
+        background-position: center;
+        min-height: 250px;
+    }
+
+    ion-card-content {
+        padding: 20px;
+    }
+}
+
+ion-card {
+    box-shadow: none;
+    border: 1px solid var(--ion-color-border);
+    min-height: 215px;
+    margin: 10px;
+    ion-card-header {
+        ion-avatar {
+            background-color: var(--ion-color-border);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 50px;
+            width: 50px;
+
+            ion-icon {
+                font-size: 30px;
+            }
+        }
+    }
+    ion-card-content {
+        padding: 30px;
+        padding-top: 10px;
+    }
+}
+
+ion-row {
+    ion-col {
+        padding: 0px;
+    }
+}

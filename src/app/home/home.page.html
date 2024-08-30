@@ -1,0 +1,214 @@
+<ion-header [translucent]="true">
+  <ion-row>
+    <ion-col>
+      <ion-item lines="none">
+        <img slot="start" src="assets/logos/rfr-200.png" width="100">
+        <ion-segment value="components">
+          <ion-segment-button  value="components"><ion-label>UI Components</ion-label></ion-segment-button>
+        </ion-segment>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-row class="ion-justify-content-center">
+    <ion-col size="12" size-lg="10">
+      <p class="ion-padding">
+        This app is made of high-level building blocks called Components, which allow you to quickly construct the UI for your app. It comes stock with a number of components, including cards, lists, and tabs.
+      </p>
+    </ion-col>
+    <ion-col size="12" size-lg="8">
+      <ion-row>
+        <ion-col size-lg="4" size="12">
+          <ion-card class="action-sheet">
+            <ion-card-header></ion-card-header>
+            <ion-card-content>
+              <h6><b>Action Sheet</b></h6>
+              <span>Action Sheets display a set of options with the ability to consirm or cancel an action.</span>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+        <ion-col size-lg="8" size="12">
+          <ion-row>
+            <ion-col size-lg="6" size="12">
+              <ion-card (click)="navigate('alerts')">
+                <ion-card-header>
+                  <ion-avatar><ion-icon name="alert-circle-outline"></ion-icon></ion-avatar>
+                </ion-card-header>
+                <ion-card-content>
+                  <h6><b>Alert</b></h6>
+                  <span>Alerts are a great way to offer the user the ability to choose a specific action or list of actions.</span>
+                </ion-card-content>
+              </ion-card>
+            </ion-col>
+            <ion-col size-lg="6" size="12">
+              <ion-card (click)="navigate('badges')">
+                <ion-card-header>
+                  <ion-avatar><img src="https://ionicframework.com/docs/icons/component-badge-icon.png" /></ion-avatar>
+                </ion-card-header>
+                <ion-card-content>
+                  <h6><b>Badge</b></h6>
+                  <span>Badges are a small component that typically communicate a numerical value to the user.</span>
+                </ion-card-content>
+              </ion-card>
+            </ion-col>
+            <ion-col size-lg="6" size="12">
+              <ion-card (click)="navigate('buttons')">
+                <ion-card-header>
+                  <ion-avatar><img src="https://ionicframework.com/docs/icons/component-button-icon.png" /></ion-avatar>
+                </ion-card-header>
+                <ion-card-content>
+                  <h6><b>Button</b></h6>
+                  <span>Buttons let your users take action. They are an essential way to interact with and navigate through an app.</span>
+                </ion-card-content>
+              </ion-card>
+            </ion-col>
+            <ion-col size-lg="6" size="12">
+              <ion-card (click)="navigate('cards')">
+                <ion-card-header>
+                  <ion-avatar><img src="https://ionicframework.com/docs/icons/component-card-icon.png" /></ion-avatar>
+                </ion-card-header>
+                <ion-card-content>
+                  <h6><b>Card</b></h6>
+                  <span>Cards are a great way to display an important piece of content, and can contain images, buttons. text and more.</span>
+                </ion-card-content>
+              </ion-card>
+            </ion-col>
+          </ion-row>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size-lg="4" size="12">
+          <ion-card>
+            <ion-card-header>
+              <ion-avatar><ion-icon name="checkbox-outline"></ion-icon></ion-avatar>
+            </ion-card-header>
+            <ion-card-content>
+              <h6><b>Checkbox</b></h6>
+              <span>Checboxes can be used to let the user know they need to make a binary decision.</span>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+        <ion-col size-lg="4" size="12">
+          <ion-card>
+            <ion-card-header>
+              <ion-avatar><img src="https://ionicframework.com/docs/icons/component-chip-icon.png" /></ion-avatar>
+            </ion-card-header>
+            <ion-card-content>
+              <h6><b>Chip</b></h6>
+              <span>Chips are a compact way to display data or actions.</span>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+        <ion-col size-lg="4" size="12">
+          <ion-card>
+            <ion-card-header>
+              <ion-avatar><img src="https://ionicframework.com/docs/icons/component-content-icon.png" /></ion-avatar>
+            </ion-card-header>
+            <ion-card-content>
+              <h6><b>Content</b></h6>
+              <span>Content is the quintessential way to interact with and navigate through an app.</span>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col size-lg="8" size="12">
+          <ion-row>
+            <ion-col size-lg="6" size="12">
+              <ion-card (click)="navigate('datetime')">
+                <ion-card-header>
+                  <ion-avatar><img src="https://ionicframework.com/docs/icons/component-datetimepicker-icon.png" /></ion-avatar>
+                </ion-card-header>
+                <ion-card-content>
+                  <h6><b>Date & Time Pickers</b></h6>
+                  <span>Date & Time pickers are used to present an interface that makes it easy for users to select dates and times.</span>
+                </ion-card-content>
+              </ion-card>
+            </ion-col>
+            <ion-col size-lg="6" size="12">
+              <ion-card>
+                <ion-card-header>
+                  <ion-avatar><ion-icon name="add-circle"></ion-icon></ion-avatar>
+                </ion-card-header>
+                <ion-card-content>
+                  <h6><b>Floating Action Button</b></h6>
+                  <span>Floating action buttons are circular buttons that perform a primary action on a screen.</span>
+                </ion-card-content>
+              </ion-card>
+            </ion-col>
+            <ion-col size-lg="6" size="12">
+              <ion-card (click)="navigate('grid')">
+                <ion-card-header>
+                  <ion-avatar><ion-icon name="grid"></ion-icon></ion-avatar>
+                </ion-card-header>
+                <ion-card-content>
+                  <h6><b>Grid</b></h6>
+                  <span>The grid is a powerful mobile-first system for building custom layouts.</span>
+                </ion-card-content>
+              </ion-card>
+            </ion-col>
+            <ion-col size-lg="6" size="12">
+              <ion-card (click)="navigate('radios')">
+                <ion-card-header>
+                  <ion-avatar><ion-icon name="radio-button-on-outline"></ion-icon></ion-avatar>
+                </ion-card-header>
+                <ion-card-content>
+                  <h6><b>Radio</b></h6>
+                  <span>Radio inputs allow you to present a set of exclusive options.</span>
+                </ion-card-content>
+              </ion-card>
+            </ion-col>
+          </ion-row>
+        </ion-col>
+        <ion-col size-lg="4" size="12">
+          <ion-card class="icons" (click)="navigate('icons')">
+            <ion-card-header></ion-card-header>
+            <ion-card-content>
+              <h6><b>Icons</b></h6>
+              <span>Beaytifully designed icons for use in web, iOS and Android apps.</span>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col size-lg="4" size="12">
+          <ion-card>
+            <ion-card-header>
+              <ion-avatar><img src="https://ionicframework.com/docs/icons/component-input-icon.png" /></ion-avatar>
+            </ion-card-header>
+            <ion-card-content>
+              <h6><b>Input</b></h6>
+              <span>Inputs provide a way for users to enter data in your app.</span>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+        <ion-col size-lg="4" size="12">
+          <ion-card>
+            <ion-card-header>
+              <ion-avatar><img src="https://ionicframework.com/docs/icons/component-item-icon.png" /></ion-avatar>
+            </ion-card-header>
+            <ion-card-content>
+              <h6><b>Item</b></h6>
+              <span>Items are an all-purpose UI container that can be used as part of a list.</span>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+        <ion-col size-lg="4" size="12">
+          <ion-card>
+            <ion-card-header>
+              <ion-avatar><img src="https://ionicframework.com/docs/icons/component-lists-icon.png" /></ion-avatar>
+            </ion-card-header>
+            <ion-card-content>
+              <h6><b>List</b></h6>
+              <span>Lists can display rows of information, such as a contact list, playlist or menu.</span>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-col>
+  </ion-row>
+</ion-content>

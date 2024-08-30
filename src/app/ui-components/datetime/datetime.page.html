@@ -1,0 +1,52 @@
+<ion-header [translucent]="true">
+  <ion-row>
+    <ion-col>
+      <ion-item lines="none">
+        <img class="ion-padding" src="assets/logos/rfr-200.png" width="100">
+        <ion-segment value="components">
+          <ion-segment-button  value="components"><ion-label>UI Components</ion-label></ion-segment-button>
+        </ion-segment>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+  <ion-toolbar>
+    <ion-buttons class="ion-padding">
+      <ion-back-button mode="md" defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Datetime</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-row class="ion-justify-content-center">
+    <ion-col size="12" size-lg="8">
+      <p class="ion-padding">
+        Datetimes present a calendar interface and time wheel, making it easy for users to select dates and times. Datetimes are similar to the native input elements of datetime-local, however, this framework's Datetime component makes it easy to display the date and time in the preferred format, and manage the datetime values.
+      </p>
+      
+      <ion-label class="ion-padding">Basic</ion-label>
+      <ion-datetime class="ion-padding"></ion-datetime>
+      
+      <ion-label class="ion-padding">Max and Min Dates
+        <p class="ion-padding">To customize the minimum and maximum datetime values, the min and max component properties can be provided which may make more sense for the app's use-case. Following the same IS0 8601 format listed in the table above, each component can restrict which dates can be selected by the user.
+
+          The following example restricts date selection to March 2022 through May 2022 only.</p>
+      </ion-label>
+      <ion-datetime class="ion-padding" value="2022-04-21T00:00:00" min="2022-03-01T00:00:00" max="2022-05-31T23:59:59"></ion-datetime>
+      
+      <ion-label class="ion-padding">Disabled</ion-label>
+      <ion-datetime class="ion-padding" id="dynamicDisabled" displayFormat="MM DD YY" disabled value="1994-12-15"></ion-datetime>
+      
+      <ion-label class="ion-padding">Specific Values
+        <p class="ion-padding">The following example allows minutes to be selected in increments of 15. It also allows for days to be selected in increments of 5.</p>
+      </ion-label>
+      <ion-datetime class="ion-padding" minuteValues="0,15,30,45" dayValues="5,10,15,20,25,30"></ion-datetime>
+      
+      <ion-label class="ion-padding">Advanced Date Constraints
+        <p class="ion-padding" style="font-size: 14px;">With the isDateEnabled property, developers can customize the ion-datetime to disable a specific day, range of dates, weekends or any custom rule using an ISO 8601 date string. The isDateEnabled property accepts a function returning a boolean, indicating if a date is enabled. The function is called for each rendered calendar day, for the previous, current and next month. Custom implementations should be optimized for performance to avoid jank.
+          The following example shows how to disable all weekend dates.</p>
+      </ion-label>
+      <ion-datetime  [isDateEnabled]="isWeekday"></ion-datetime>
+    </ion-col>
+  </ion-row>
+</ion-content>

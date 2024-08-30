@@ -1,0 +1,74 @@
+<ion-header [translucent]="true">
+  <ion-row>
+    <ion-col>
+      <ion-item lines="none">
+        <img slot="start" src="assets/logos/rfr-200.png" width="100">
+        <ion-segment value="components">
+          <ion-segment-button  value="components"><ion-label>UI Components</ion-label></ion-segment-button>
+        </ion-segment>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button mode="md" defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Icons</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-row class="ion-justify-content-center">
+    <ion-col size="12" size-lg="8">
+      <p class="ion-padding">
+        Icon is a simple component made available through the Ionicons library, which comes pre-packaged by default. It can be used to display any icon from the Ionicons set, or a custom SVG. It also has support for styling such as size and color.
+      </p>
+
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>Basic Usage</ion-card-title>
+        </ion-card-header>
+        <ion-card-content class="ion-text-center">
+          <ion-icon name="logo-ionic"></ion-icon>
+          <ion-icon name="logo-ionic" size="large"></ion-icon>
+          <ion-icon name="logo-ionic" color="primary"></ion-icon>
+          <ion-icon name="logo-ionic" size="large" color="primary"></ion-icon>
+        </ion-card-content>
+      </ion-card>
+      
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>Accessibility</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          <p>Icons that are purely decorative content should have <code>aria-hidden="true"</code>. This will not visually hide the icon, but it will hide the element from assistive technology.</p>
+          <div class="ion-text-center ion-padding-top">
+            <ion-icon name="heart" aria-hidden="true"></ion-icon>
+            <textarea style="width: 100%; text-align: center; padding-top: 20px;" disabled>
+              <ion-icon name="heart" aria-hidden="true"></ion-icon>
+            </textarea>
+          </div>
+          <p>If the icon is interactive, it should have alternate text defined by adding an <code>aria-label</code>.</p>
+          <div class="ion-text-center ion-padding-top">
+            <ion-icon name="heart" aria-label="Favorite"></ion-icon>
+            <textarea style="width: 100%; text-align: center; padding-top: 20px;" disabled>
+              <ion-icon name="heart" aria-label="Favorite"></ion-icon>
+            </textarea>
+          </div>
+          <p>Alternatively, if the icon is inside of another element that it is describing, that element should have the <code>aria-label</code> added to it, and the icon should be hidden using <code>aria-hidden</code>.</p>
+          <div class="ion-text-center ion-padding-top">
+            <ion-button aria-label="Favorite">
+              <ion-icon name="heart" aria-hidden="true"></ion-icon>
+            </ion-button>
+            <textarea rows="4" style="width: 100%; text-align: center; padding-top: 20px;" disabled>
+              <ion-button aria-label="Favorite">
+                <ion-icon name="heart" aria-hidden="true"></ion-icon>
+              </ion-button>
+            </textarea>
+          </div>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+  </ion-row>>
+
+</ion-content>

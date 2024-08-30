@@ -1,0 +1,11 @@
+ion-card {
+  box-shadow: none !important;
+  border: 1px solid var(--ion-color-border);
+  ion-card-header {
+    font-weight: bold;
+    border-bottom: 1px solid var(--ion-color-border);
+  }
+  ion-card-content {
+    padding: 30px;
+  }
+}
