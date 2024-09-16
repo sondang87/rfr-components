@@ -84,7 +84,7 @@ export class AlertPage implements OnInit {
         },
         {
           name: 'name3',
-          value: 'http://ionicframework.com',
+          value: '',
           type: 'url',
           placeholder: 'Favorite site ever'
         },
