@@ -1,9 +1,84 @@
-<ion-header>
+<ion-header [translucent]="true">
+  <ion-row>
+    <ion-col>
+      <ion-item lines="none">
+        <img slot="start" src="assets/logos/development tools.png" width="100">
+        <ion-segment value="components">
+          <ion-segment-button  value="components"><ion-label>UI Components</ion-label></ion-segment-button>
+        </ion-segment>
+      </ion-item>
+    </ion-col>
+  </ion-row>
   <ion-toolbar>
-    <ion-title>actionsheet</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button mode="md" defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Action Sheets</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content fullscreen class="ion-padding margin-bottom-10">
+  <ion-row class="ion-justify-content-center">
+    <ion-col size="12" size-lg="8">
+      <p class="ion-padding">
+        An Action Sheet is a dialog that displays a set of options. It appears on top of the app's content, and must be manually dismissed by the user before they can resume interaction with the app. Destructive options are made obvious in ios mode. There are multiple ways to dismiss the action sheet, including tapping the backdrop or hitting the escape key on desktop.
+      </p>
 
+      <section>
+        <ion-list-header>
+          <ion-label>
+            Inline Action Sheets (Recommended)
+            <p class="ion-padding" style="font-size: 14px;"><code>ion-action-sheet</code> can be used by writing the component directly in your template. This reduces the number of handlers you need to wire up in order to present the Action Sheet.</p>
+          </ion-label>
+        </ion-list-header>
+        <div class="ion-padding-start ion-padding-end">
+          <ion-button id="open-action-sheet">Open</ion-button>
+          <ion-action-sheet mode="ios" trigger="open-action-sheet" header="Actions" [buttons]="actionSheetButtons"></ion-action-sheet>
+        </div>
+      </section>
+
+      <section>
+        <ion-list-header>
+          <ion-label>
+            Controller Action Sheets
+            <p class="ion-padding" style="font-size: 14px;">The <code>actionSheetController</code> can be used in situations where more control is needed over when the Action Sheet is presented and dismissed.</p>
+          </ion-label>
+        </ion-list-header>
+        <div class="ion-padding-start ion-padding-end">
+          <ion-button (click)="presentActionSheet()">Open</ion-button>
+        </div>
+      </section>
+
+      <section>
+        <ion-list-header>
+          <ion-label>
+            Collecting Role Information on Dismiss
+            <p class="ion-padding" style="font-size: 14px;">When the <code>didDismiss</code> event is fired, the <code>data</code> and <code>role</code> fields of the event detail can be used to gather information about how the Action Sheet was dismissed.</p>
+          </ion-label>
+        </ion-list-header>
+        <div class="ion-padding-start ion-padding-end">
+          <ion-button id="open-action-sheet-1">Open</ion-button>
+          <ion-action-sheet
+            trigger="open-action-sheet-1"
+            header="Example header"
+            subHeader="Example subheader"
+            [buttons]="actionSheetButtons"
+            (didDismiss)="logResult($event)"
+          ></ion-action-sheet>
+          <ion-card>
+            <ion-card-header style="background-color: whitesmoke;">
+              CONSOLE
+            </ion-card-header>
+            <ion-card-content style="padding-top: 20px;">
+              <code>
+                {{data}}
+              </code>
+            </ion-card-content>
+          </ion-card>
+        </div>
+      </section>
+      
+    </ion-col>
+  </ion-row>
+  
 </ion-content>

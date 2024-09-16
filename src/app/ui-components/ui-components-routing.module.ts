@@ -9,6 +9,10 @@ const routes: Routes = [
     component: UiComponentsPage
   },
   {
+    path: 'action-sheets',
+    loadChildren: () => import('./actionsheet/actionsheet.module').then( m => m.ActionsheetPageModule)
+  },
+  {
     path: 'alerts',
     loadChildren: () => import('./alert/alert.module').then( m => m.AlertPageModule)
   },
@@ -43,7 +47,8 @@ const routes: Routes = [
   {
     path: 'lists',
     loadChildren: () => import('./list-item/list-item.module').then( m => m.ListItemPageModule)
-  },  {
+  },
+  {
     path: 'floating-buttons',
     loadChildren: () => import('./floating-buttons/floating-buttons.module').then( m => m.FloatingButtonsPageModule)
   }

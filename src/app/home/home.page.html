@@ -1,14 +1,14 @@
 <ion-header [translucent]="true">
-  <ion-row>
-    <ion-col>
-      <ion-item lines="none">
-        <img slot="start" src="assets/logos/rfr-200.png" width="100">
-        <ion-segment value="components">
-          <ion-segment-button  value="components"><ion-label>UI Components</ion-label></ion-segment-button>
-        </ion-segment>
-      </ion-item>
-    </ion-col>
-  </ion-row>
+  <ion-toolbar>
+    <ion-item lines="none">
+      <img slot="start" src="assets/logos/development tools.png" width="100">
+      <ion-segment value="components">
+        <ion-segment-button  value="components"><ion-label>UI Components</ion-label></ion-segment-button>
+      </ion-segment>
+    </ion-item>
+    <ion-menu-button slot="end" color="primary" auto-hide="true" menu="slidingMenu"></ion-menu-button>
+  </ion-toolbar>
+  
 </ion-header>
 
 <ion-content [fullscreen]="true">

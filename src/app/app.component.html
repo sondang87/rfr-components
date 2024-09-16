@@ -1,3 +1,32 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  <ion-split-pane when="md" contentId="main">
+    <ion-menu side="start" contentId="main" menuId="slidingMenu" swipeEnabled="false">
+      <ion-header>
+        <ion-toolbar class="ion-text-center" style="display: flex; justify-content: center;">
+          <img src="assets/logos/rfr-200.png" width="110">
+          <br />
+          <ion-label style="font-size: 12px; color: gray">
+            <span>v1.0.0</span><br />
+            <span>{{datetime | date: 'dd/MM/yyyy hh:mm:ss a'}}</span>
+          </ion-label>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content>
+        <ion-list class="ion-padding-top ion-margin-top ion-padding-bottom">
+          <div *ngFor="let p of menus; let i = index">
+            <ion-item lines="none"><b>{{p.title}}</b></ion-item>
+            <ion-list class="sub-menu">
+              <ion-menu-toggle auto-hide="false" *ngFor="let c of p.sub">
+                <ion-item lines="none" [routerLink]="c.url" [routerLinkActive]="c.url ? 'selected' : ''">{{c.title}}</ion-item>
+              </ion-menu-toggle>
+            </ion-list>
+          </div>
+        </ion-list>
+      </ion-content>
+    </ion-menu>
+  
+    <div class="ion-page ion-margin-left" id="main">
+      <ion-router-outlet></ion-router-outlet>
+    </div>
+  </ion-split-pane>
 </ion-app>

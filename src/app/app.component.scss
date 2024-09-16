@@ -1,0 +1,27 @@
+@media (min-width: 768px) {
+    ion-page{
+        margin-left: 15%;
+        width:100%;
+    }
+    ion-menu{
+        width:15%;
+        display:block;
+    }
+}
+
+ion-menu {
+    .sub-menu {
+        padding-left: 10px;
+    }
+
+    ion-item.selected {
+        color: var(--ion-color-button-primary);
+    }
+}
+
+ion-menu-toggle ion-item {
+    font-size: 14px;
+    font-weight: 600;
+    color: gray;
+}
+

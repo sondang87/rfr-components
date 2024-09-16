@@ -57,14 +57,11 @@ html body {
 ion-header {
     box-shadow: none !important;
 
-    img {
-        margin-right: 100px;
-    }
-
     ion-toolbar {
         background: transparent;
         --background: transparent;
         --border-width: 0px !important;
+        padding-top: 5px !important;
 
         ion-buttons {
             ion-back-button {
@@ -148,4 +145,8 @@ ion-segment {
     .alert-wrapper {
         width: 500px;
     }
+}
+
+ion-backdrop .menu-backdrop {
+    display:none !important;
 }
