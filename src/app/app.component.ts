@@ -16,10 +16,6 @@ export class AppComponent {
         {
           title: 'UI Components',
           url: '/home'
-        },
-        {
-          title: 'AI Components (Coming soon)',
-          url: '/ai-components'
         }
       ]
     },
@@ -121,11 +117,7 @@ export class AppComponent {
           url: '/ui-components/icons'
         }
       ]
-    },
-    {
-      title: 'AI Tools (Coming soon)',
-      sub: []
-    },
+    }
   ];
   constructor(
     private platform: Platform,
