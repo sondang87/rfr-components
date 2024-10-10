@@ -17,6 +17,10 @@ const routes: Routes = [
   {
     path: 'ui-components',
     loadChildren: () => import('./ui-components/ui-components.module').then( m => m.UiComponentsPageModule)
+  },
+  {
+    path: 'ai-components',
+    loadChildren: () => import('./ai-components/ai-components.module').then( m => m.AiComponentsPageModule)
   }
 ];
 @NgModule({
